@@ -11,15 +11,15 @@ for i=1:N
         return;
     end
     
-    if norm(F(xn1),inf)<=e1 
+    if norm(F(xn1),2)<=e1 
         break 
     end
     
-    if norm(xn1-xn,inf)<=e2 
+    if norm(xn1-xn,2)<=e2 
         break 
     end
     
-    if (norm((xn1-xn),inf)/(norm(xn1,inf)))<=e3 
+    if (norm((xn1-xn),2)/(norm(xn1,2)))<=e3 
         break 
     end
     
