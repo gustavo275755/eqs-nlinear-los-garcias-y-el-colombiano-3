@@ -11,15 +11,15 @@ for i=1:N
         return;
     end
     
-    if abs(F(xn1))<=e1 
+    if norm(F(xn1),inf)<=e1 
         break 
     end
     
-    if abs(xn1-xn)<e2 
+    if norm(xn1-xn,inf)<e2 
         break 
     end
     
-    if abs((xn1-xn)/xn1)<e3 
+    if norm(((xn1-xn)/xn1),inf)<e3 
         break 
     end
     
