@@ -15,11 +15,11 @@ for i=1:N
         break 
     end
     
-    if norm(xn1-xn,inf)<e2 
+    if norm(xn1-xn,inf)<=e2 
         break 
     end
     
-    if norm(((xn1-xn)/xn1),inf)<e3 
+    if (norm((xn1-xn),inf)/(norm(xn1,inf)))<=e3 
         break 
     end
     
